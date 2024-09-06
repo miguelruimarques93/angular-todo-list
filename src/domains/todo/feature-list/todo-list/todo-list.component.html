@@ -1,0 +1,7 @@
+<ngtodo-todo-form />
+
+<hr />
+
+@for (item of todos(); track item.id) {
+  <ngtodo-todo [todo]="item" />
+}

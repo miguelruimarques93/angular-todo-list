@@ -1,0 +1,13 @@
+@use '@angular/material' as mat;
+
+:host {
+  display: block;
+}
+
+mat-card-header {
+  display: flex;
+}
+
+button {
+  margin-left: auto;
+}

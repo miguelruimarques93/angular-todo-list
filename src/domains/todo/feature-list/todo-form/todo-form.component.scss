@@ -1,0 +1,17 @@
+:host {
+  display: contents;
+}
+
+mat-card-header {
+  padding-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    align-self: end;
+  }
+}
+
