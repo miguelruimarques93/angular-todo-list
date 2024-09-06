@@ -1,5 +1,5 @@
 <mat-card appearance="outlined">
-  <mat-card-header><span>New Todo</span></mat-card-header>
+  <mat-card-header><span>@if(formMode === 'create') { New Todo } @else { Edit Todo }</span></mat-card-header>
   <mat-card-content>
     <form #todoForm="ngForm" [formGroup]="form" (ngSubmit)="handleFormSubmission(todoForm)">
       <mat-form-field class="full-width">
@@ -12,7 +12,7 @@
         <textarea matInput formControlName="description"></textarea>
       </mat-form-field>
 
-      <button type="submit" mat-flat-button [disabled]="form.invalid">Add</button>
+      <button type="submit" mat-flat-button [disabled]="form.invalid">@if(formMode === 'create') { Add } @else { Edit }</button>
     </form>
   </mat-card-content>
 </mat-card>

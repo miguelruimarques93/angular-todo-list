@@ -1,5 +1,7 @@
 export interface Todo {
-  id: number;
+  id?: number;
   title: string;
   description?: string;
 }
+
+export type TodoStateEvent = 'create' | 'update' | 'remove';

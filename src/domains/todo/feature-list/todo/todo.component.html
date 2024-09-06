@@ -1,10 +1,15 @@
 <mat-card appearance="outlined">
   <mat-card-header>
-    <mat-card-title>{{ todo().title }}</mat-card-title>
+    <mat-card-title>{{ todo.title }}</mat-card-title>
+    <div class="spacer"></div>
+    <button class="mat-secondary" mat-flat-button (click)="handleTodoEdit()">
+      <mat-icon>edit</mat-icon>
+      Edit
+    </button>
     <button class="mat-secondary" mat-flat-button (click)="handleTodoRemove()">
       <mat-icon>delete</mat-icon>
       Delete
     </button>
   </mat-card-header>
-  <mat-card-content>{{ todo().description }}</mat-card-content>
+  <mat-card-content>{{ todo.description }}</mat-card-content>
 </mat-card>

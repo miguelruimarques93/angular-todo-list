@@ -1,7 +1,7 @@
-<ngtodo-todo-form />
+<ngtodo-todo-form #todoForm />
 
-<hr />
+<mat-divider />
 
 @for (item of todos(); track item.id) {
-  <ngtodo-todo [todo]="item" />
+  <ngtodo-todo [todo]="item" (edit)="todoForm.editTodo(item)" />
 }

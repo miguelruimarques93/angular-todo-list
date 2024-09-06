@@ -15,3 +15,6 @@ $theme: mat.define-theme();
 button.mat-secondary {
   @include mat.button-color($theme, $color-variant: secondary);
 }
+
+// regular style toast
+@import 'ngx-toastr/toastr';

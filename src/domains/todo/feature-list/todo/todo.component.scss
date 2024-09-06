@@ -6,8 +6,12 @@
 
 mat-card-header {
   display: flex;
-}
 
-button {
-  margin-left: auto;
+  .spacer {
+    flex: 1;
+  }
+
+  button + button {
+    margin-left: 0.5rem;
+  }
 }
